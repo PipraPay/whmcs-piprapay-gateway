@@ -1,0 +1,33 @@
+{
+ "schema": "1.1",
+ "type": "whmcs-gateways",
+ "name": "piprapay",
+ "license": "MIT",
+ "category": "payments",
+ "description": {
+  "name": "PipraPay Gateway",
+  "tagline": "Simplify Your Payment Management",
+  "long": "PipraPay offers a seamless and secure payment gateway for WHMCS, enabling businesses to manage transactions efficiently.",
+  "features": [
+   "Quick and easy integration",
+   "Secure payment processing",
+   "Customizable checkout experience",
+   "Support for WHMCS 8+"
+  ]
+ },
+ "logo": {
+  "filename": "logo.png"
+ },
+ "support": {
+  "homepage": "https://piprapay.com/",
+  "docs_url": "https://github.com/PipraPay",
+  "support_email": "support@piprapay.com",
+  "issues_url": "https://community.piprapay.com/"
+ },
+ "authors": [
+  {
+   "name": "PipraPay Development Team",
+   "homepage": "https://piprapay.com/"
+  }
+ ]
+}
