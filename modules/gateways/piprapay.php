@@ -66,7 +66,14 @@ function piprapay_link($params)
     $amount = $params['amount'];
     $currency = $params['currency_pp'];
     $returnUrl = $params['returnurl'];
-    $callbackUrl = $params['systemurl'] . '/modules/gateways/callback/piprapay.php';
+
+    $parsedUrl = parse_url($params['systemurl']);
+    $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : 'http';
+    $host = $parsedUrl['host'] ?? '';
+    $port = isset($parsedUrl['port']) ? ':' . $parsedUrl['port'] : '';
+    
+    $systemUrl = $scheme . '://' . $host . $port;
+    $callbackUrl = $systemUrl . '/modules/gateways/callback/piprapay.php';
 
     $postData = [
         'full_name'    => $params['clientdetails']['fullname'],
