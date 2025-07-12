@@ -21,6 +21,18 @@ function piprapay_config()
             'Type' => 'System',
             'Value' => 'PipraPay',
         ],
+        'Description' => [
+            'Type' => 'System',
+            'Value' => 'This is the PipraPay payment gateway module for WHMCS, which allows users to process payments securely.',
+        ],
+        'DeveloperName' => [
+            'Type' => 'System',
+            'Value' => 'Mouzh Hossain Shad',
+        ],
+        'Version' => [
+            'Type' => 'System',
+            'Value' => '1.0.0',
+        ],
         'apikey' => [
             'FriendlyName' => 'API Key',
             'Type' => 'password',
