@@ -31,7 +31,7 @@ function piprapay_config()
         ],
         'Version' => [
             'Type' => 'System',
-            'Value' => '1.0.0',
+            'Value' => '1.0.1',
         ],
         'apikey' => [
             'FriendlyName' => 'API Key',
