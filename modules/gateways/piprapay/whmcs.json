@@ -1,5 +1,5 @@
 {
- "schema": "1.1",
+ "schema": "1.0.2",
  "type": "whmcs-gateways",
  "name": "piprapay",
  "license": "MIT",
@@ -20,7 +20,7 @@
  },
  "support": {
   "homepage": "https://piprapay.com/",
-  "docs_url": "https://github.com/PipraPay",
+  "docs_url": "https://piprapay.readme.io/reference/overview",
   "support_email": "support@piprapay.com",
   "issues_url": "https://community.piprapay.com/"
  },
