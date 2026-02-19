@@ -78,7 +78,7 @@ function piprapay_link($params)
             'redirect_url' => $returnUrl,
             'cancel_url'   => $params['systemurl'],
             'webhook_url'  => $callbackUrl,
-            'return_type'  => $params['returnType'],
+            'return_type'  => 'GET',
             'currency'     => $params['currency'],
         ];
     
@@ -96,7 +96,7 @@ function piprapay_link($params)
         if (isset($result['pp_url'])) {
             return '<a href="' . $result['pp_url'] . '" target="_blank" class="btn btn-primary">Pay Now</a>';
         } else {
-            return '<div class="alert alert-danger">Error connecting to PipraPay.</div>';
+            return '<div class="alert alert-danger">'.$response.'</div>';
         }
     }else{
         $baseUrl = $params['baseUrl'];
